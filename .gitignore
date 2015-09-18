@@ -1,8 +1,7 @@
 .venv
 .venv3
-build
 .idea
-readme.html
-PyBabel_json.egg-info/
+build
 dist
+PyBabel_json_md.egg-info/
 *.pyc

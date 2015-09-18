@@ -3,22 +3,18 @@
 from setuptools import setup, os
 
 
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
-
 setup(
-    name='PyBabel-json',
-    version='0.2.0',
-    description='PyBabel json gettext strings extractor',
-    author='Anton Bykov aka Tigra San',
-    author_email='tigrawap@gmail.com',
-    long_description=read('README.rst'),
-    packages=['pybabel_json'],
-    url="https://github.com/tigrawap/pybabel-json",
+    name='PyBabel-json-md',
+    version='0.1.0',
+    description='PyBabel json metadef (md) gettext strings extractor',
+    author='Wayne Okuma',
+    author_email='wayne.okuma@hpe.com',
+    packages=['pybabel_json_md'],
+    url="https://github.com/wkoathp/pybabel-json-md",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
@@ -33,6 +29,6 @@ setup(
     include_package_data=True,
     entry_points = """
         [babel.extractors]
-        json = pybabel_json.extractor:extract_json
+        json_md = pybabel_json_md.extractor:extract_json_md
         """,
 )
